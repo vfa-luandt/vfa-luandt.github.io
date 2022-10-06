@@ -21,6 +21,7 @@
             <input type="checkbox" name="myCheckbox">
             <span class="slider round"></span>
         </label>
+        <button type="button" onclick="loginNC()">Login NC!</button>
         <script>
             var _selector = document.querySelector('input[name=myCheckbox]');
             _selector.addEventListener('change', function(event) {
@@ -31,6 +32,9 @@
                     });
                 }
             });
+            function loginNC() {
+                window.open("okpphrasebook://auth/code=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImZkYy5jaGFyaXNzZStmYW0yQGdtYWlsLmNvbSIsInN1YiI6IjEyMjU2OSJ9.a2P_H2fzUswjbwLoKvWRQihf17QT3nDG8i39Zkzzupo");
+            }
         </script>
     </body>
 </html>
